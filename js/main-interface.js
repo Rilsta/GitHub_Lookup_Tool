@@ -2,16 +2,20 @@ var apiKey = require('./../.env').apiKey;
 var GhUser = require('./../js/ghUser.js').GhUser;
 
 $(document).ready(function(){
-  $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
-    console.log(response);
+
+  // $("#hubForm").submit(function(event){
+  //   event.preventDefault();
+  //   var username = $("#usernameInput").val();
+  // })
+
+  $.get('https://api.github.com/users/daneden/repos?access_token=' + apiKey).then(function(response){
+
+    response.forEach(function(repo){
+      console.log(repo.name)
+      console.log(repo.description)
+    })
+
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });
-
-  $.get('https://api.github.com/users/daneden/repos?' + apiKey).then(function(response){
-    console.log(response);
-  }).fail(function(error){
-    console.log(error.responseJSON.message);
-  });
-
 });
