@@ -1,1 +1,7 @@
 // Containers, etc.
+
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}

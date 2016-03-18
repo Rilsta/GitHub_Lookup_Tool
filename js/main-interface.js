@@ -1,13 +1,18 @@
 var getRepoInfo = require('./../js/getRepo.js').getRepoInfo;
 
 $(document).ready(function(){
+
   $("#hubForm").submit(function(event){
     event.preventDefault();
+    $('#repoNameList').text("");
+    $('#repoDescList').text("");
     username = $('#usernameInput').val();
     getRepoInfo();
   });
+
   $("#resetList").click(function(){
-    $('.repoNameList').text("");
-    $('.repoDescList').text("");
+    $('#repoNameList').text("");
+    $('#repoDescList').text("");
   });
+
 });
