@@ -1,14 +1,13 @@
-var apiKey = require('./../.env').apiKey;
-var GhUser = require('./../js/ghUser.js').GhUser;
+var getRepoInfo = require('./../js/getRepo.js').getRepoInfo;
 
 $(document).ready(function(){
-
-  $.get('https://api.github.com/users/daneden/repos?access_token=' + apiKey).then(function(response){
-    response.forEach(function(repo){
-      $(".repoNameList").append("<li>" + repo.name + "</li>");
-      $(".repoDescList").append("<li>" + repo.description + "</li>");
-    })
-  }).fail(function(error){
-    console.log(error.responseJSON.message);
+  $("#hubForm").submit(function(event){
+    event.preventDefault();
+    username = $('#usernameInput').val();
+    getRepoInfo();
+  });
+  $("#resetList").click(function(){
+    $('.repoNameList').text("");
+    $('.repoDescList').text("");
   });
 });
