@@ -11,7 +11,7 @@ A user will be able to enter in a Github username and see a list of their reposi
 ##Installation
 * Git clone the following repository:
 https://github.com/Rilsta/github_api_review.git
-* Open console direct yourself to the project folder.
+* Open console and direct yourself to the project folder.
 * Run $npm install
 * Run $bower install
 * Run $gulp build
