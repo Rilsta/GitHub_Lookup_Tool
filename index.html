@@ -13,14 +13,15 @@
       <h1>Check Github</h1>
 
       <form class="main-form" id="hubForm">
-        <input class="main-input" id="usernameInput" type="text" placeholder="Enter Username">
+        <label>Enter Github Username</label><br>
+        <input class="main-input" id="usernameInput" type="text">
         <button class="button-submit" id="submitButton" type="submit" name="button">Submit</button>
       </form>
       <button class="button-main" type="button" id="resetList" name="button">Reset</button>
 
       <div class="list-container">
-        <ul id="repoNameList"></ul>
-        <ul id="repoDescList"></ul>
+        <ul class="name-list" id="repoNameList"></ul>
+        <ul class="desc-list" id="repoDescList"></ul>
       </div>
 
     </div>
