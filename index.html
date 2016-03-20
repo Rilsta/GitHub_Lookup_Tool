@@ -10,17 +10,18 @@
 </head>
   <body>
     <div class="container">
-      <h1>Check Github</h1>
+      <h1>Check GitHub</h1>
 
       <form class="main-form" id="hubForm">
-        <label>Enter Github Username</label><br>
-        <input class="main-input" id="usernameInput" type="text">
+        <input class="main-input" id="usernameInput" type="text" placeholder="Enter Username">
         <button class="button-submit" id="submitButton" type="submit" name="button">Submit</button>
+        <button class="button-main" type="button" id="resetList" name="button">Reset</button>
       </form>
-      <button class="button-main" type="button" id="resetList" name="button">Reset</button>
 
       <div class="list-container">
+        <!-- <h3>Names</h3> -->
         <ul class="name-list" id="repoNameList"></ul>
+        <!-- <h3>Descriptions</h3> -->
         <ul class="desc-list" id="repoDescList"></ul>
       </div>
 

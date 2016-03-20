@@ -1,0 +1,14 @@
+.main-form{
+  display: flex;
+}
+.main-input{
+  border: none;
+  padding: $form-padding;
+  background: $grey;
+  transition: background 300ms;
+  &:focus{
+    outline: none;
+    background: $light-grey;
+  }
+
+}

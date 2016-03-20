@@ -1,1 +1,29 @@
 // Button Styles
+
+.button-submit{
+  border: none;
+  padding: $form-padding;
+  background: $black;
+  color: $white;
+  transition: background 300ms;
+  &:hover{
+    background: #454545;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+.button-main{
+  border: none;
+  padding: $form-padding;
+  background: $grey;
+  color: $white;
+  transition: background 300ms;
+  &:hover{
+    background: #b1b1b1;
+  }
+  &:focus{
+    outline: none;
+  }
+}

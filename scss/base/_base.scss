@@ -5,11 +5,13 @@
 }
 
 body{
+  background: $white;
+  letter-spacing: 1px;
 }
 
-// body::-webkit-scrollbar {
-//     display: none;
-// }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 a{
 }
