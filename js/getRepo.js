@@ -5,10 +5,10 @@ function getRepoInfo(){
 
     $("#userLogin").append(
       "<a href='" + response[0].owner.html_url + "'>" +
-
-      "<h1 class='user-name'>" + response[0].owner.login + "</h1>" +
+        "<h1 class='user-name'>" +
+          response[0].owner.login +
+        "</h1>" +
       "</a>"
-
     );
 
     $("#userAvatar").append(
@@ -26,8 +26,6 @@ function getRepoInfo(){
           repo.description +
         "</li>" +
         "<hr>");
-
-        console.log(repo)
     });
 
   }).fail(function(error){
