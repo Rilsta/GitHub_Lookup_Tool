@@ -1,15 +1,17 @@
-.list-container{
-  display: flex;
+.name-list{
+  list-style: none;
+  .repo-name{
+    font-size: 1.5em;
+  }
 
-  // .name-list{
-  //   li{
-  //     list-style: none;
-  //   }
-  // }
-  //
-  // .desc-list{
-  //   li{
-  //     list-style: none;
-  //   }
-  // }
+  .repo-desc{
+    font-size: 1.1em;
+    margin-left: 1em;
+  }
+  hr{
+    border: none;
+    background: $light-grey;
+    height: 1px;
+    margin: 1em 0;
+  }
 }
