@@ -6,6 +6,8 @@ $(document).ready(function(){
     event.preventDefault();
     $('#repoNameList').text("");
     $('#repoDescList').text("");
+    $('#userLogin').text("");
+    $('#userAvatar').text("");
     username = $('#usernameInput').val();
     getRepoInfo();
   });
@@ -13,6 +15,8 @@ $(document).ready(function(){
   $("#resetList").click(function(){
     $('#repoNameList').text("");
     $('#repoDescList').text("");
+    $('#userLogin').text("");
+    $('#userAvatar').text("");
   });
 
 });
